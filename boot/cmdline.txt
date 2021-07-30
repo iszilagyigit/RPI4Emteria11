@@ -1,0 +1,1 @@
+dwc_otg.lpm_enable=0 cgroup_enable=memory console=tty0 console=serial2,115200 consoleblank=0 no_console_suspend earlyprintk root=/dev/ram0 rootwait elevator=deadline fsck.repair=yes androidboot.hardware=rpi4 androidboot.board.platform=bcm2711 androidboot.selinux=permissive audit=0 sdhci.debug_quirks2=4

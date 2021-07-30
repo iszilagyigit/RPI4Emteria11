@@ -1,0 +1,20 @@
+# only applies to compute module 4
+[cm4]
+dtoverlay=dwc2,dr_mode=host
+
+# applies to everything (resolves the cm4 condition)
+[all]
+kernel=u-boot.bin
+arm_64bit=1
+
+# audio
+dtparam=audio=on
+hdmi_force_edid_audio=1
+
+# disable kms audio path and force bcm2835 card  0 = hdmi card 1 = headphone jack
+dtoverlay=vc4-fkms-v3d,cma-256
+disable_fw_kms_setup=1
+disable_overscan=1
+
+# set core clock fixed to 250MHz
+enable_uart=1
