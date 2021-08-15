@@ -12,7 +12,7 @@ dtparam=audio=on
 hdmi_force_edid_audio=1
 
 # disable kms audio path and force bcm2835 card  0 = hdmi card 1 = headphone jack
-dtoverlay=vc4-fkms-v3d,cma-256
+dtoverlay=vc4-kms-v3d-pi4,cma-256,noaudio
 disable_fw_kms_setup=1
 disable_overscan=1
 
